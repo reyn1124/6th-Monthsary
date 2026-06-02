@@ -157,21 +157,23 @@ z-index:2;
 /* Cute decorations */
 
 .section::before{
-content:"💙";
+content:"💙✨";
 position:absolute;
-top:50px;
-left:25px;
-font-size:80px;
+top:30px;
+left:20px;
+font-size:70px;
 opacity:.12;
+pointer-events:none;
 }
 
 .section::after{
-content:"☁️";
+content:"☁️💙";
 position:absolute;
-bottom:50px;
-right:25px;
-font-size:90px;
+bottom:30px;
+right:20px;
+font-size:80px;
 opacity:.12;
+pointer-events:none;
 }
 
 /* Title */
@@ -314,16 +316,19 @@ padding:25px;
 }
 
 .love-item{
-width:min(700px,90%);
-padding:18px;
-margin:12px 0;
+width:100%;
+max-width:700px;
 
-background:rgba(255,255,255,.7);
+padding:20px;
+margin:12px auto;
+
+background:rgba(255,255,255,.75);
 backdrop-filter:blur(10px);
 
 border-radius:20px;
 
 font-size:1.15rem;
+line-height:1.8;
 
 box-shadow:0 5px 15px rgba(0,0,0,.05);
 
@@ -394,14 +399,18 @@ box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 .future-item{
-background:rgba(255,255,255,.7);
+width:100%;
+max-width:700px;
 
-padding:18px;
-margin:15px 0;
+background:rgba(255,255,255,.75);
+
+padding:20px;
+margin:15px auto;
 
 border-radius:20px;
 
-font-size:1.2rem;
+font-size:1.15rem;
+line-height:1.8;
 
 box-shadow:0 5px 15px rgba(0,0,0,.05);
 
@@ -474,4 +483,11 @@ width:100%;
 height:100%;
 object-fit:cover;
 border-radius:15px;
+}
+
+.letter-card,
+.future-card,
+.memory-card{
+margin-top:20px;
+margin-bottom:20px;
 }
