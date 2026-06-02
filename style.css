@@ -420,3 +420,58 @@ rgba(124,131,255,.15),
 rgba(156,140,255,.15)
 );
 }
+
+.memory-card{
+max-width:1100px;
+width:95%;
+
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(15px);
+
+padding:40px 30px;
+border-radius:30px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.memory-text{
+font-size:1.2rem;
+margin-bottom:30px;
+line-height:1.8;
+}
+
+.memory-footer{
+margin-top:30px;
+font-size:1.15rem;
+font-weight:500;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:20px;
+}
+
+.photo{
+background:white;
+padding:10px;
+border-radius:20px;
+
+height:280px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+}
+
+.photo:hover{
+transform:translateY(-8px) rotate(2deg);
+}
+
+.photo img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:15px;
+}
